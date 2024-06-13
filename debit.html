@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debit</title>
+</head>
+<body style="background-image: url('https://img.freepik.com/free-photo/abstract-blur-shopping-mall-interior_1203-8243.jpg?w=1060&t=st=1718294810~exp=1718295410~hmac=b6ad749e12c2d62b351c99891312c83b32368537af7d6bb2b85024403330ca2d'); background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;">
+    <div style="margin-top: 200px;margin-left:350px;">
+        <div style="border: 1px solid black; width:500px; height:300px; border-radius: 20px;">
+        <div  style="margin-top: 50px; margin-left:30px;">
+            <div style=" margin-top:50px">
+                <center><h1>DEBIT DETAILS</h1></center>
+                <center><input type="number" placeholder="Enter your debit amount" id="deb" style="width:300px;height:50px;padding:20px"></center>
+                <div style="margin-top:30px">
+                <center><button class="btn btn-outline-primary" onclick="deb()">Debit</button>
+                <button class="btn btn-outline-success" onclick="bal()">Check Balance</button>
+               <a href="account.html"><button class="btn btn-outline-warning">Back To Home</button></a></center>
+                
+
+            
+                    
+            </div>
+            </div>   
+            </div>
+
+      </div>
+    </div>
+    <script> 
+        function deb(){
+            const amount=50000;
+            let x=document.getElementById("deb").value;
+            let xvalue=parseInt(x);
+            if(xvalue<=amount){
+                const Res=(amount-xvalue);
+                alert(Res);
+            }
+            
+        
+        else{
+            alert("You Don't Have Sufficient Money");
+        }
+
+    }
+    function bal(){
+        const amount=50000;
+            let x=document.getElementById("deb").value;
+            let xvalue=parseInt(x);
+            if(xvalue<=amount){
+                const Res=(amount-xvalue);
+                alert(Res);
+            }
+            
+        
+        else{
+            alert("You Don't Have Sufficient Money");
+        }
+       
+            
+    }
+    </script>
+</body>
+</html> 
